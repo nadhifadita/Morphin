@@ -15,7 +15,7 @@ Struktur folder Morphin adalah sebagai berikut
 ```
 Morphin/
 ├── morphin/
-│   ├── imbuhan.py
+│   ├── perbaiki.py
 │   └── reduplikasi.py
 ├── Notebook Sketches/
 │   ├── PyMuPDF_learning
@@ -28,5 +28,7 @@ Fail `imbuhan.py` merupakan fungsi dari perbaikan morfologi yang berisi fungsi-f
 
 ## TODO
 * konfiks
-* akhiran
+* akhiran 'nya' perlu ditinjau penggabungan kalimatnya, terlebih kalo ada koma gaada spasi.
 * sisipan
+* perbaiki cara import library
+* testing.py blm diperbaikin (bntar ngerjain deep learning dlu)
