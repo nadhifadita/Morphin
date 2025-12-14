@@ -12,3 +12,5 @@ def perbaiki_kata_depan(kata):
         return fixed
     else: 
         return kata
+    
+print(perbaiki_kata_depan('kejakarta'))

@@ -1,9 +1,8 @@
-from morphin import perbaiki
+from morphin import perbaiki_kalimat
 
-awalan = perbaiki.perbaiki_awalan
-perbaiki_kalimat = perbaiki.kalimat_awalan
+perbaiki = perbaiki_kalimat.perbaiki()
 
 kalimat = 'aku disuruh ibu untuk pergi mensapu halaman'
 
-hasil = perbaiki_kalimat(kalimat)
+hasil = perbaiki(kalimat)
 print(hasil)

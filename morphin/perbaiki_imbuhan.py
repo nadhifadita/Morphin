@@ -71,47 +71,10 @@ def perbaiki_awalan(kata):
                 fixed = 'meng' + kata[2:]
     return fixed
 
-def perbaiki_nya(kata):
-    fixed_list = kata.split()
-    for i in range(len(fixed_list)):
-        if fixed_list[i] == 'nya':
-            fixed = fixed_list[i-1].join
-            fixed = "".join(fixed_list)
-    return fixed
-
-# perbaiki reduplikasi
-'''
-1. Tokenisasi kalimat dengan fungsi .split() -> menjadi list $kata: String
-2. Perulangan (looping) selama indeks $i kurang dari panjang $kata
-    IF $kata pada indeks ke-$i (sekarang) sama dengan setelahnya:
-        sisipkan "-" di antaranya dan masukkan ke dalam list kalimat benar
-    ELSE:
-        masukkan kata tersebut ke list kalimat yang benar
-'''
-
-def reduplikasi(kalimat):
-    kata = kalimat.split()
-    i = 0
-    fixed_list = []
-    while i < (len(kata)-1):
-        if kata[i] == kata[i+1]:
-            fixed = kata[i] + '-' + kata[i+1]
-            fixed_list.append(fixed)
-            i+=2
-        else :
-            fixed_list.append(kata[i])
-            i+=1
-
-    fixed_kalimat = " ".join(fixed_list)
-    return fixed_kalimat
-
-
-def perbaiki_kalimat(kalimat):
-    print(f'kalimat salah: {kalimat}')
-    pecah = kalimat.split()
-    for i in range(len(pecah)):
-        if pecah[i].startswith('me'):
-            pecah[i] = perbaiki_awalan(pecah[i])
-            print(f'perbaikan (list): {pecah}, kata: {pecah[i]}')
-    fixed = " ".join(pecah)
+# perbaiki akhiran
+def akhiran_nya(list_kata):
+    for i in range(len(list_kata)):
+        if list_kata[i] == 'nya':
+            fixed = list_kata[i-1].join(list_kata[i])
+            fixed = "".join(list_kata)
     return fixed
