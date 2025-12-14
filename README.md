@@ -15,9 +15,10 @@ Struktur folder Morphin adalah sebagai berikut
 ```
 Morphin/
 ├── morphin/
-│   ├── perbaiki.py
+│   ├── perbaiki_imbuhan.py
+│   ├── perbaiki_kalimat.py
 │   └── reduplikasi.py
-├── Notebook Sketches/
+├── sketches/
 │   ├── PyMuPDF_learning
 │   ├── morphin'_morphology_fixin'.ipynb
 │   └── sketch_imbuhan.ipynb
