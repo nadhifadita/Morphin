@@ -25,3 +25,8 @@ Morphin/
 ```
 
 Fail `imbuhan.py` merupakan fungsi dari perbaikan morfologi yang berisi fungsi-fungsi untuk memperbaiki awalan, akhiran, sisipan, dan konfiks. Lalu, `reduplikasi.py` adalah fail yang menampung fungsi untuk memperbaiki duplikasi kata. Fungsi-fungsi tersebut diuji di fail `testing.py`.
+
+## TODO
+* konfiks
+* akhiran
+* sisipan
