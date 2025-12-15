@@ -1,8 +1,13 @@
-from morphin import perbaiki_kalimat
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
 
-perbaiki = perbaiki_kalimat.perbaiki()
+# if bisa distem
+kata = 'dijakarta'
+out = stemmer.stem(kata)
 
-kalimat = 'aku disuruh ibu untuk pergi mensapu halaman'
+fixed = kata[:2] + ' ' + kata[2:]
 
-hasil = perbaiki(kalimat)
-print(hasil)
+print(
+    fixed
+)
